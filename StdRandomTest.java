@@ -42,8 +42,8 @@ public class StdRandomTest{
         for(int i=0;i<a.length;i++){
             assert count[i]==1;
         }
-    }
 
+    }
 
     public static void main(String[] args){
        StdRandomTest t=new StdRandomTest();
@@ -53,6 +53,8 @@ public class StdRandomTest{
        assert t.uniformTest1(100)<t.uniformTest1(1000);
        t.uniformtest2(-10,10);
        t.uniformtest2(201,1000);
+
+       t.shuffleTest();
 
     }
 }

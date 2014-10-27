@@ -1,5 +1,3 @@
-
-StdRandom.java
 public class StdRandom{
 
     public static double random(){
@@ -37,11 +35,11 @@ public class StdRandom{
     }
 
     /* shuffle an array */
-    public static void shuffle(double[] a){
+    public static void shuffle(int[] a){
         //exchange a[i] with a random element in a[i...N-1]
         for(int i=0; i<a.length; i++){
             int j=uniform(i,a.length);
-            double tmp=a[j];
+            int tmp=a[j];
             a[j]=a[i];
             a[i]=tmp;
         }
