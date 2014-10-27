@@ -32,6 +32,18 @@ public class StdRandomTest{
         }
     }
 
+    public void shuffleTest(){
+        int[] a=new int[]{0,1,3,4,2};
+        rand.shuffle(a);
+        int count[]=new int[5];
+        for(int i=0;i<a.length;i++){
+            count[a[i]]++;
+        }
+        for(int i=0;i<a.length;i++){
+            assert count[i]==1;
+        }
+    }
+
 
     public static void main(String[] args){
        StdRandomTest t=new StdRandomTest();
