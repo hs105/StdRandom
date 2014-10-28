@@ -1,5 +1,10 @@
+/*
+ a collection of random sampling operations
+*/
+
 public class StdRandom {
 
+    /*a real in [0,1) */
     public static double random() {
         return Math.random(); 
     }
